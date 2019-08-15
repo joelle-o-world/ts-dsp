@@ -2,9 +2,11 @@
   "name": "ts-dsp",
   "version": "1.0.0",
   "description": "A set of TypeScript tools for digital signal processing",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makedocs": "typedoc src --out docs --module commonjs"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,9 @@
   },
   "homepage": "https://github.com/joelyjoel/ts-dsp#readme",
   "devDependencies": {
-    "@types/node": "^12.7.2"
+    "@types/node": "^12.7.2",
+    "typedoc": "^0.15.0",
+    "typedoc-markdown-theme": "0.0.4"
   },
   "dependencies": {
     "fft.js": "^4.0.3"
