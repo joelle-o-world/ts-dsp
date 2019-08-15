@@ -58,7 +58,7 @@ var Windower = /** @class */ (function (_super) {
     };
     return Windower;
 }(stream_1.Transform));
-exports.default = Windower;
+exports.Windower = Windower;
 Windower.envelopes = {};
 Windower.envelopeFunctions = {
     "hamming": function (n, N) {

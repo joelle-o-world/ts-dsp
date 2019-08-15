@@ -61,4 +61,4 @@ class Hopper extends Transform {
     return hopper
   }
 }
-export default Hopper
+export {Hopper}

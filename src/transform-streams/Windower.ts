@@ -57,7 +57,7 @@ class Windower extends Transform {
     return env
   }
 }
-export default Windower;
+export {Windower};
 
 Windower.envelopes = {}
 Windower.envelopeFunctions = {

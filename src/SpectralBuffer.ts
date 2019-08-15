@@ -49,4 +49,4 @@ class SpectralBuffer {
     return buffer
   }
 }
-export default SpectralBuffer
+export {SpectralBuffer}

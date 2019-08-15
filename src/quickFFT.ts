@@ -1,8 +1,8 @@
-import Hopper from './transform-streams/Hopper'
-import Windower from './transform-streams/Windower'
-import FFT from './transform-streams/FFT'
-import IFFT from './transform-streams/IFFT'
-import UnHopper from './transform-streams/UnHopper'
+import {Hopper} from './transform-streams/Hopper'
+import {Windower} from './transform-streams/Windower'
+import {FFT} from './transform-streams/FFT'
+import {IFFT} from './transform-streams/IFFT'
+import {UnHopper} from './transform-streams/UnHopper'
 import { Readable } from 'stream';
 
 /** Shortcut function for setting up FFT/IFFT */

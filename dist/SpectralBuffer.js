@@ -49,4 +49,4 @@ var SpectralBuffer = /** @class */ (function () {
     };
     return SpectralBuffer;
 }());
-exports.default = SpectralBuffer;
+exports.SpectralBuffer = SpectralBuffer;

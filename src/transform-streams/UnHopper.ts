@@ -59,4 +59,4 @@ class UnHopper extends Transform {
     callback()
   }
 }
-export default UnHopper
+export {UnHopper}

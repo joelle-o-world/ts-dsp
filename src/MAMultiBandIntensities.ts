@@ -1,8 +1,8 @@
 import { Readable, PassThrough } from "stream";
-import { MovingAverageBandPassFilter } from "./MovingAverageBandPassFilter";
-import { RMS } from "./RMS";
-import Hopper from "./Hopper";
-import { assertAudioBuffer } from "../assertAudioBuffer";
+import { MovingAverageBandPassFilter } from "./transform-streams/MovingAverageBandPassFilter";
+import { RMS } from "./transform-streams/RMS";
+import {Hopper} from "./transform-streams/Hopper";
+import { assertAudioBuffer } from "./assertAudioBuffer";
 
 type OutputFormat = {
   time: Smp

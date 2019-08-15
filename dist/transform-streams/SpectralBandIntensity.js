@@ -75,4 +75,4 @@ var SpectralBandIntensity = /** @class */ (function (_super) {
     };
     return SpectralBandIntensity;
 }(stream_1.Transform));
-exports.default = SpectralBandIntensity;
+exports.SpectralBandIntensity = SpectralBandIntensity;

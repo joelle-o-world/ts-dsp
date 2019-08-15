@@ -1,5 +1,5 @@
 import { Transform, TransformCallback } from "stream";
-import SpectralBuffer from "../SpectralBuffer";
+import {SpectralBuffer} from "../SpectralBuffer";
 
 const sq = (x:number) => x * x
 

@@ -1,5 +1,5 @@
 import { TransformCallback } from "stream";
-import SpectralBuffer from '../SpectralBuffer';
+import {SpectralBuffer} from '../SpectralBuffer';
 import {Transform} from 'stream'
 
 
@@ -41,4 +41,4 @@ class SpectralFlux extends Transform {
   }
 }
 
-export default SpectralFlux
+export {SpectralFlux}

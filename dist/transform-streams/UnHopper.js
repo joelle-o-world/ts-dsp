@@ -61,4 +61,4 @@ var UnHopper = /** @class */ (function (_super) {
     };
     return UnHopper;
 }(stream_1.Transform));
-exports.default = UnHopper;
+exports.UnHopper = UnHopper;

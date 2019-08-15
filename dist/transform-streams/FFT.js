@@ -13,24 +13,24 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var FFT = require("fft.js");
+var FFTJS = require("fft.js");
 var stream_1 = require("stream");
 var SpectralBuffer_1 = require("../SpectralBuffer");
 /**
  *  Transform stream for converting a pre-windowed AudioBuffer object-stream to spectral data.
  *  @returns SpectralBuffer object-stream
  */
-var FastFourierTransform = /** @class */ (function (_super) {
-    __extends(FastFourierTransform, _super);
-    function FastFourierTransform(windowSize) {
+var FFT = /** @class */ (function (_super) {
+    __extends(FFT, _super);
+    function FFT(windowSize) {
         if (windowSize === void 0) { windowSize = 2048; }
         var _this = _super.call(this, { objectMode: true }) || this;
         _this.windowSize = windowSize;
         _this.frameSize = _this.windowSize * 2;
-        _this.fftFunction = new FFT(_this.windowSize);
+        _this.fftFunction = new FFTJS(_this.windowSize);
         return _this;
     }
-    FastFourierTransform.prototype._transform = function (audio, encoding, callback) {
+    FFT.prototype._transform = function (audio, encoding, callback) {
         if (audio.numberOfChannels != 1)
             throw "FastFourierTransform expects mono input";
         if (audio.length != this.windowSize)
@@ -43,11 +43,11 @@ var FastFourierTransform = /** @class */ (function (_super) {
             this.fftFunction.completeSpectrum(bins);
             channelData[c] = bins;
         }
-        var spectrum = SpectralBuffer_1.default.fromArray(channelData, audio.sampleRate);
+        var spectrum = SpectralBuffer_1.SpectralBuffer.fromArray(channelData, audio.sampleRate);
         // @ts-ignore
         spectrum.time = audio.time;
         callback(null, spectrum);
     };
-    return FastFourierTransform;
+    return FFT;
 }(stream_1.Transform));
-exports.default = FastFourierTransform;
+exports.FFT = FFT;

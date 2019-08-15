@@ -47,4 +47,4 @@ var IFFT = /** @class */ (function (_super) {
     };
     return IFFT;
 }(stream_1.Transform));
-exports.default = IFFT;
+exports.IFFT = IFFT;

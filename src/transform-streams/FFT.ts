@@ -1,12 +1,12 @@
-import * as FFT from 'fft.js';
+import * as FFTJS from 'fft.js';
 import {Transform, TransformCallback} from 'stream';
-import SpectralBuffer from '../SpectralBuffer';
+import {SpectralBuffer} from '../SpectralBuffer';
 
 /**
  *  Transform stream for converting a pre-windowed AudioBuffer object-stream to spectral data.
  *  @returns SpectralBuffer object-stream
  */
-class FastFourierTransform extends Transform {
+class FFT extends Transform {
   windowSize: Smp;
   frameSize: Smp;
   fftFunction: any;
@@ -15,7 +15,7 @@ class FastFourierTransform extends Transform {
     super({objectMode:true})
     this.windowSize = windowSize
     this.frameSize = this.windowSize * 2
-    this.fftFunction = new FFT(this.windowSize)
+    this.fftFunction = new FFTJS(this.windowSize)
   }
 
   _transform(audio:AudioBuffer, encoding:string, callback:TransformCallback) {
@@ -41,4 +41,4 @@ class FastFourierTransform extends Transform {
     callback(null, spectrum)
   }
 }
-export default FastFourierTransform
+export {FFT}

@@ -45,4 +45,4 @@ var SpectralFlux = /** @class */ (function (_super) {
     };
     return SpectralFlux;
 }(stream_1.Transform));
-exports.default = SpectralFlux;
+exports.SpectralFlux = SpectralFlux;

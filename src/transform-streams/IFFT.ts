@@ -1,7 +1,7 @@
 import * as FFT from 'fft.js';
 import {Transform, TransformCallback} from 'stream'
 import * as AudioBuffer from 'audiobuffer'
-import SpectralBuffer from '../SpectralBuffer';
+import {SpectralBuffer} from '../SpectralBuffer';
 
 /**
  * Inverse fast fourier transform stream. Convert SpectralBuffer object stream to overlapping AudioBuffer stream.
@@ -41,4 +41,4 @@ class IFFT extends Transform {
     )
   }
 }
-export default IFFT
+export {IFFT}

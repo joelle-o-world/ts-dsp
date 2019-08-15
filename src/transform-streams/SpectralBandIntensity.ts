@@ -1,4 +1,4 @@
-import SpectralBuffer from "../SpectralBuffer";
+import {SpectralBuffer} from "../SpectralBuffer";
 import { Transform, TransformCallback } from "stream";
 
 const sq = (x:number) => x*x
@@ -43,4 +43,4 @@ class SpectralBandIntensity extends Transform {
   }
 }
 
-export default SpectralBandIntensity
+export {SpectralBandIntensity}

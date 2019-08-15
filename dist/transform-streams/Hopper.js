@@ -64,4 +64,4 @@ var Hopper = /** @class */ (function (_super) {
     };
     return Hopper;
 }(stream_1.Transform));
-exports.default = Hopper;
+exports.Hopper = Hopper;
