@@ -1,0 +1,34 @@
+{
+  "name": "ts-dsp",
+  "version": "1.0.0",
+  "description": "A set of TypeScript tools for digital signal processing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelyjoel/ts-dsp.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "dsp",
+    "digital",
+    "signal",
+    "processing",
+    "audio"
+  ],
+  "author": "Joely Joel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelyjoel/ts-dsp/issues"
+  },
+  "homepage": "https://github.com/joelyjoel/ts-dsp#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.2"
+  },
+  "dependencies": {
+    "fft.js": "^4.0.3"
+  }
+}
