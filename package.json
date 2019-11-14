@@ -1,6 +1,6 @@
 {
   "name": "ts-dsp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A set of TypeScript tools for digital signal processing",
   "main": "dist/index.js",
   "typings": "src/index.ts",
