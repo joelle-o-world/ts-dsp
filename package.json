@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A set of TypeScript tools for digital signal processing",
   "main": "dist/index.js",
-  "typings": "src/index.js",
+  "typings": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "makedocs": "typedoc src --out docs --module commonjs"
