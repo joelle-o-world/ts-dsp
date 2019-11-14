@@ -6,7 +6,8 @@
   "typings": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "makedocs": "typedoc src --out docs --module commonjs"
+    "makedocs": "typedoc src --out docs --module commonjs",
+    "postinstall": "tsc"
   },
   "repository": {
     "type": "git",
