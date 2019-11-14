@@ -8,6 +8,7 @@ import IOIHistogram from "./IOIHistogram";
 import BeatAgentGroup from "./BeatAgentGroup";
 import * as AudioBuffer from 'audiobuffer'
 import BeatAgent from "./BeatAgent";
+import { Smp, Hz, Seconds } from "../global";
 
 declare interface BeatTrackingConfig {
   /** Size of fft frame to use. */

@@ -1,5 +1,6 @@
 import {SpectralBuffer} from "../SpectralBuffer";
 import {Transform, TransformCallback} from 'stream'
+import { Smp, Hz } from "../global";
 
 /*The spectral centroid is a measure used in digital signal processing to characterise a spectrum. It indicates where the "center of mass" of the spectrum is located. Perceptually, it has a robust connection with the impression of "brightness" of a sound. [Wikipedia]*/
 

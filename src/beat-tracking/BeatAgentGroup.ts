@@ -1,4 +1,5 @@
 import BeatAgent from './BeatAgent'
+import { Seconds } from '../global';
 
 /**
  * Beat tracking class for processing onset data based on a set of tempo hypotheses.

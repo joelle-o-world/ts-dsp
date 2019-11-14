@@ -1,3 +1,4 @@
+import { FFTBins, Hz, Smp } from "./global";
 
 /** Stores a single frame of multichannel FFT data. */
 class SpectralBuffer {

@@ -11,9 +11,9 @@ function quickFFT(stream, windowSize, hopSize, envelope) {
     if (windowSize === void 0) { windowSize = 2048; }
     if (hopSize === void 0) { hopSize = 441; }
     if (envelope === void 0) { envelope = 'hamming'; }
-    var hopper = new Hopper_1.default(windowSize, hopSize);
-    var windower = new Windower_1.default(windowSize, envelope);
-    var fft = new FFT_1.default(windowSize);
+    var hopper = new Hopper_1.Hopper(windowSize, hopSize);
+    var windower = new Windower_1.Windower(windowSize, envelope);
+    var fft = new FFT_1.FFT(windowSize);
     hopper.pipe(windower).pipe(fft);
     if (stream instanceof stream_1.Readable)
         stream.pipe(hopper);
@@ -27,8 +27,8 @@ function quickIFFT(stream, windowSize, hopSize, envelope) {
     if (hopSize === void 0) { hopSize = 441; }
     if (envelope === void 0) { envelope = 'hamming'; }
     return stream
-        .pipe(new IFFT_1.default(windowSize))
-        .pipe(new Windower_1.default(windowSize, envelope))
-        .pipe(new UnHopper_1.default(windowSize, hopSize));
+        .pipe(new IFFT_1.IFFT(windowSize))
+        .pipe(new Windower_1.Windower(windowSize, envelope))
+        .pipe(new UnHopper_1.UnHopper(windowSize, hopSize));
 }
 exports.quickIFFT = quickIFFT;

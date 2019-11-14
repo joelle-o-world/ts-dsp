@@ -1,3 +1,5 @@
+import { Seconds } from "../global";
+
 type IOICluster = {
   ioi: Seconds,
   size: number

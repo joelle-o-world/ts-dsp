@@ -1,6 +1,7 @@
 import { Transform, TransformCallback } from "stream";
 import {SpectralBuffer} from "../SpectralBuffer";
 import { frequencyToMidi } from "../util/pitchConversion";
+import { FrequencyBand, Hz, MidiPitch } from "../global";
 
 const sq = (x:number) => x * x
 

@@ -1,4 +1,5 @@
 import BeatAgentGroup from './BeatAgentGroup'
+import { Seconds } from '../global';
 
 /**
  * Agent is the central class for beat tracking

@@ -1,5 +1,6 @@
 import * as AudioBuffer from "audiobuffer"
 import { Transform, TransformCallback } from "stream";
+import { EnvelopeType } from "../global";
 
 /** Applies an envelope to AudioChunks to prepare them for FFT. */
 class Windower extends Transform {

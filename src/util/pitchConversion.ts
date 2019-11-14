@@ -1,3 +1,5 @@
+import { Hz, MidiPitch } from "../global"
+
 const k1 = 12 / Math.log(2)
 const k2 = 4/55 * Math.pow(2,(3/4))
 

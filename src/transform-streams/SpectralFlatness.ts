@@ -1,5 +1,6 @@
 import { Transform, TransformCallback } from "stream";
 import { SpectralMagnitudesChunk } from "./SpectralMagnitudes";
+import { Smp, Hz } from "../global";
 
 interface SpectralFlatnessChunk {
   /** The spectral flatness of the signal frame. */

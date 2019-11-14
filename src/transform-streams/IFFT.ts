@@ -2,6 +2,7 @@ import * as FFT from 'fft.js';
 import {Transform, TransformCallback} from 'stream'
 import * as AudioBuffer from 'audiobuffer'
 import {SpectralBuffer} from '../SpectralBuffer';
+import { Smp } from '../global';
 
 /**
  * Inverse fast fourier transform stream. Convert SpectralBuffer object stream to overlapping AudioBuffer stream.

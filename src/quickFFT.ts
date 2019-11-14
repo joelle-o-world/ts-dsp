@@ -4,6 +4,7 @@ import {FFT} from './transform-streams/FFT'
 import {IFFT} from './transform-streams/IFFT'
 import {UnHopper} from './transform-streams/UnHopper'
 import { Readable } from 'stream';
+import { EnvelopeType } from './global'
 
 /** Shortcut function for setting up FFT/IFFT */
 function quickFFT(stream:Readable | AudioBuffer, windowSize=2048, hopSize=441, envelope:EnvelopeType='hamming') {

@@ -2,6 +2,7 @@
 
 import {Transform, TransformCallback} from 'stream';
 import * as AudioBuffer from 'audiobuffer';
+import { Smp } from '../global';
 /**
  * Transform stream for preparing overlapping/spaced chunks of audio for FFT.
  */

@@ -1,5 +1,6 @@
 import { Transform, TransformCallback } from "stream";
 import * as AudioBuffer from 'audiobuffer';
+import { Hz, Smp } from "../global";
 
 /** 
  * A band pass filter using simple moving average low pass filters.

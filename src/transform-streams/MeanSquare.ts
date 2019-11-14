@@ -1,4 +1,5 @@
 import { Transform, TransformCallback } from "stream";
+import { Smp, Hz } from "../global";
 
 interface MeanSquareChunk {
   meanSquare:number;

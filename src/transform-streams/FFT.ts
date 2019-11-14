@@ -1,6 +1,7 @@
 import * as FFTJS from 'fft.js';
 import {Transform, TransformCallback} from 'stream';
 import {SpectralBuffer} from '../SpectralBuffer';
+import { Smp } from '../global';
 
 /**
  *  Transform stream for converting a pre-windowed AudioBuffer object-stream to spectral data.

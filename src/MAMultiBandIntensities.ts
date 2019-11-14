@@ -3,6 +3,7 @@ import { MovingAverageBandPassFilter } from "./transform-streams/MovingAverageBa
 import { RMS } from "./transform-streams/RMS";
 import {Hopper} from "./transform-streams/Hopper";
 import { assertAudioBuffer } from "./assertAudioBuffer";
+import { Smp, Hz, Seconds, FrequencyBand } from "./global";
 
 type OutputFormat = {
   time: Smp
