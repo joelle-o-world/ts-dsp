@@ -1,1 +1,1 @@
-export * from './transform-streams';
+export {Hopper, Windower, FFT, SpectralBandIntensity} from './transform-streams';

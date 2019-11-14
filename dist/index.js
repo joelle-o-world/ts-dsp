@@ -1,6 +1,7 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./transform-streams"));
+var transform_streams_1 = require("./transform-streams");
+exports.Hopper = transform_streams_1.Hopper;
+exports.Windower = transform_streams_1.Windower;
+exports.FFT = transform_streams_1.FFT;
+exports.SpectralBandIntensity = transform_streams_1.SpectralBandIntensity;

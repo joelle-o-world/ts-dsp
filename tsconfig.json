@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "allowJs": true,
         "target": "es5",
+        "declaration": true,
         "noImplicitAny": true,
         "downlevelIteration": true,
         "strictNullChecks": true,
