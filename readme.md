@@ -1,5 +1,7 @@
 # ts-dsp
-A collection of digital signal processing tools written in typescript.
+A collection of digital signal processing tools written in typescript. These classes mostly extend the node stream API.
+
+For a more versatile set of DSP objects for audio synthesis see http://github.com/joelyjoel/dusp
 
 ## Transform Streams Reference
 ### FFT
